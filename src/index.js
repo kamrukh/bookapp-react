@@ -3,11 +3,36 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios'
+import GetData from "./component/GetData";
+import AddBook from "./component/AddBook";
+import DeleteBook from "./component/DeleteBook";
+import SearchBook from "./component/SearchBook";
+import UpdateBook from "./component/UpdateBook";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+      <div>
+          <React.StrictMode>
+              <GetData />
+          </React.StrictMode>
+
+          <React.StrictMode>
+              <AddBook />
+          </React.StrictMode>
+
+          <React.StrictMode>
+              <DeleteBook />
+          </React.StrictMode>
+
+          <React.StrictMode>
+              <SearchBook />
+          </React.StrictMode>
+
+          <React.StrictMode>
+              <UpdateBook />
+          </React.StrictMode>
+      </div>
+  ,
   document.getElementById('root')
 );
 
